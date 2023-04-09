@@ -1,0 +1,319 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
+*,
+::before,
+::after{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: sans-serif;
+    color: #ffffff;
+     background: #1d1d1d; 
+
+
+}
+#netAnimation{
+    position: fixed;
+    /* right: 0px; */
+    width: 100%;
+    height: 100vh;
+    z-index:-1;
+    /* opacity: 0.5; */
+}
+
+header{
+    width: 95%;
+    height: 10vh;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: fixed;
+    z-index: 2;
+}
+#sound{
+    padding: 7px;
+    background-color: #1b1b1b;
+    border-radius: 5px;
+    display: flex;
+    align-items: center;
+    color: #fff;
+
+}
+.sound-cloud{
+    font-size: 1.2rem;
+    margin: 7px;
+    color: #fd1056;
+}
+.on-off{
+    cursor: pointer;
+    margin-left: 5px;
+}
+#off{
+    color: #fd1056;
+}
+#on{
+    display: none;
+    color: #08fdd8;
+}
+.buttons-container .fas{
+    font-size: 2rem;
+    padding: 10px;
+    background-color: #181818;
+    color:#fd1056;
+    cursor: pointer;
+}
+.buttons-container .fas:nth-child(2){
+    display: none;
+}
+
+/* Aside Section */
+.navigation{
+    width: 100%;
+    height: 0;
+    position: fixed;
+    top: 0;
+    left: 0;
+    overflow: hidden ;
+    background-color: #1d1d1d;
+    z-index: 1;
+}
+.show-nav{
+    height: 100%;
+    overflow: visible;
+}
+.navigation-wrapper{
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-direction: column;
+}
+.logo-section{
+    min-height: 32vh;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-color: #000;
+    color: #fff;
+}
+.logo{
+    display: grid;
+    place-items: center;
+}
+.logo img{
+    width: auto;
+    height: 100px;
+}
+/* Navigation Section Starts */
+.nav-links a{
+    display: block;
+    text-align: center;
+    text-decoration: none;
+    line-height: 3rem;
+    color: #909096;
+}
+.nav-links a:hover{
+    color: #fd1056;
+}
+.nav-links a::before{
+    content: '';
+    width: 100%;
+    height: 1px;
+    position: absolute;
+    left: 0;
+    background-color: #2d2d2d;
+}
+
+/* Social Buttons */
+.social-buttons{
+    list-style: none;
+    margin-bottom: 30px;
+    display: flex;
+}
+.social-buttons li{
+    width: 30px;
+    font-size: 1rem;
+}
+.social-buttons li a{
+    color:#909096;
+    text-decoration: none;
+}
+.social-buttons li a:hover{
+    color: #fd1056;
+}
+
+/* Navigation Bar Ends Here  */
+#section-home{
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    padding-left: 1.5rem;
+    z-index: 5;
+}
+
+.text-zone h1{
+    font-size: 4rem;
+    line-height: 80px;
+    letter-spacing: 0px;
+}
+.text-zone h2{
+    font-size: 3rem;
+    line-height: 50px;
+    letter-spacing: -2px;
+}
+.text-zone h1, h2{
+    background: radial-gradient(circle farthest-corner at top left, #FD1056 20%, #0A7AFF 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+/* Contact me button */
+.contact-button{
+    text-decoration: none;
+    /* border-radius: 5px; */
+    margin-top: 50px 0 0;
+    width: 100%;
+    max-width: 200px;
+    height: 40px;
+    display: block;
+    line-height: 40px;
+    letter-spacing: 3px;
+    position: relative;
+    text-align: center;
+    color:#FD1056;
+    
+}
+.contact-button div{
+    position: relative;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    transition: all .3s ease-in-out;
+}
+.contact-button span.bg{
+    position: absolute;
+    width: 0%;
+    height: 100%;
+    left: -5px;
+    top: 0;
+    transition: all .3s ease-in-out;
+    background-color: #fd1056;
+    transform: skewX(-18deg);
+}
+.contact-button:hover span.bg{
+    width: 110%;
+}
+.contact-button span.base{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    left: 0;
+    border: 1px solid #fd1056;
+    box-sizing: border-box;
+}
+.contact-button span.text{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+}
+.contact-button:hover span.text{
+    color: #1d1d1d;
+}
+/* Scroll down */
+.scroll-down{
+    position: absolute;
+    right: -20px;
+    bottom: 3.3rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    transform: rotate(90deg);
+    display: block;
+    font-size: 14px;
+}
+.scroll-down-left{
+    left: -30px;
+    right: auto;
+}
+.scroll-down span{
+    display: inline-block;
+    animation: scroll .5s linear infinite alternate-reverse;
+}
+@keyframes scroll{
+    0%{
+        transform: translateX(-7px);
+    }
+    100%{
+        transform: translateX(7px);
+    }
+}
+
+.scroll-down .fas{
+    transform: rotate(270deg);
+    margin-left: 10px
+}
+
+
+
+/* Media Section for Bigger Screens */
+
+@media screen and (min-width:950px){
+    header{
+        justify-content: flex-end;
+    }   
+    .buttons-container{
+        display: none;
+    }
+
+    .navigation{
+        width: 15vh;
+        height: 100%;
+    }
+    .navigation-wrapper{
+        height: 75%;
+    }
+    .logo-section{
+        min-height: 25vh;
+    }
+    .logo img{
+        width: 80px;
+        height: auto;
+    }
+    .social-buttons{
+        margin-bottom: 0; 
+    }
+    .social-buttons li{
+        text-align: center;
+        font-size: 1rem;
+    }
+    /* Home Section */
+    #section-home{
+        padding-left: 13rem;
+    }
+    .text-zone h1{
+        font-size: 6rem;
+        line-height: 90px;
+        letter-spacing: -5px;
+    }
+    .text-zone h2{
+        font-size: 4rem;
+        line-height: 80px;
+        letter-spacing: -1px;
+    }
+    .scroll-down{
+        right: -30px;
+        bottom: 3.3rem;
+    }
+    .scroll-down-left{
+        left: 110px;
+        right: auto;
+    }
+
+}
