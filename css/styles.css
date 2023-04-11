@@ -259,7 +259,15 @@ header{
     transform: rotate(270deg);
     margin-left: 10px
 }
-
+#header{
+    font-size: 3rem;
+    margin-bottom:30px;
+}
+#header h2{
+    background: linear-gradient(to right, #FD1056 20%, #0A7AFF 80%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
 
 
 /* Media Section for Bigger Screens */
