@@ -90,3 +90,27 @@ body {
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
     cursor: pointer;
 }
+@media (max-width: 768px) {
+    .navigation {
+        padding: 1rem 1rem;
+    }
+
+    .page-title {
+        right: 2vh;
+    }
+
+    .page-title h1 {
+        font-size: 1.5rem;
+        margin-top: 2vh;
+    }
+
+    .swiper-container {
+        width: 95%;
+        height: 60%;
+        margin-top: 10vh;
+    }
+
+    .swiper-slide img {
+        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    }
+}
