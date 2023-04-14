@@ -23,7 +23,7 @@ body{
 }
 
 header{
-    width: 95%;
+    width: 100%;
     height: 10vh;
     margin: auto;
     display: flex;
@@ -33,6 +33,7 @@ header{
     z-index: 2;
 }
 #sound{
+    margin: 2vh;
     padding: 7px;
     background-color: #1b1b1b;
     border-radius: 5px;
@@ -224,40 +225,6 @@ header{
 }
 .contact-button:hover span.text{
     color: #1d1d1d;
-}
-/* Scroll down */
-.scroll-down{
-    position: absolute;
-    right: -20px;
-    bottom: 3.3rem;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    transform: rotate(90deg);
-    display: block;
-    font-size: 14px;
-}
-.scroll-down-left{
-    left: -30px;
-    right: auto;
-}
-.scroll-down span{
-    display: inline-block;
-    animation: scroll .5s linear infinite alternate-reverse;
-}
-@keyframes scroll{
-    0%{
-        transform: translateX(-7px);
-    }
-    100%{
-        transform: translateX(7px);
-    }
-}
-
-.scroll-down .fas{
-    transform: rotate(270deg);
-    margin-left: 10px
 }
 #header{
     font-size: 3rem;
