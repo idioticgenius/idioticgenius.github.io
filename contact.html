@@ -4,7 +4,7 @@
         <meta charset="utf-8">
         <meta http-equive="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1">
-        <title>Abhidan Jung Thapa Portfolio</title>
+        <title>Abhidan Jung Thapa Contact me</title>
         <link rel="stylesheet" href="css/styles.css">
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 
@@ -37,7 +37,7 @@
                 <div class="logo-section">
                     <a class="logo" rel="home" href="#">
                         <picture>
-                            <source srcset="img/logo.svg" media="(min-width: 900px)">
+                            <source srcset="img/logo.svg" media="(min-width: 768px)">
                             <img src="img/logo-horizontal.svg" alt="logo">
                         </picture>
 
@@ -72,24 +72,50 @@
             </div>
         </aside>
 
-        <!-- introduction text zone Section one -->
-        <section  id="section-home" class="section-home">
-
-            <div class="text-zone">
-                <h1>Hi, <br> I'm Abhidan, <br> </h1>
-                <h2>Artificial Intelligence Researcher</h2>
-                <br>
-                    <!-- Contact Button  -->
-                <a href="#" class="contact-button">
-                    <div>
-                        <span class="bg"></span>
-                        <span class="base"></span>
-                        <span class="text">Contact me!</span>
-                        <span class="dot"></span>
+        <!-- Contact Section -->
+        <section id="section-home" class="section-home">
+            <div class="contact-section contact-wrapper">
+                <div class="contact-form-container">
+                    <div class="contact-heading text-zone">
+                        <h2>Contact me</h2>
+                        <p>
+                            I’m interested in freelance opportunities – especially ambitious or
+                            large projects. However, if you have other request or question,
+                            don’t hesitate to use the form.
+                        </p>
                     </div>
-                </a>
+                    <form class="contact-form">
+                        <table class="form-table">
+                            <tr>
+                                <td><input type="text" placeholder="Name" name="name" class="name" /></td>
+                                <td><input type="email" name="email" placeholder="Email" class="email" /></td>
+                            </tr>
+                            <tr>
+                                <td colspan="2"><input type="text" placeholder="Subject" class="subject" name="subject" /></td>
+                            </tr>
+                            <tr>
+                                <td colspan="2"><textarea type="text" placeholder="Message" class="textarea" name="message"></textarea></td>
+                            </tr>
+                        </table>
+                        <button type="submit" class="contact-button submit-button">
+                            <a href="#" class="contact-button">
+                                <div>
+                                    <span class="bg"></span>
+                                    <span class="base"></span>
+                                    <span class="text">Send message!</span>
+                                    <span class="dot"></span>
+                                </div>
+                            </a>
+                        </button>
+                    </form>
+                </div>
+                <div class="google-map">
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d14131.257162604583!2d85.3195183!3d27.6921341!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0xabfe5f4b310f97de!2sThe%20British%20College%2C%20Kathmandu!5e0!3m2!1sen!2snp!4v1574570771879!5m2!1sen!2snp" width="100%" height="480" frameborder="0" style="border:0;" allowfullscreen="">
+                    </iframe>
+                </div>
             </div>
         </section>
+        
         <!-- Footer Section  -->
         <footer>
             <div class="footer-content">
@@ -151,5 +177,56 @@
         <script src="https://cdn.jsdelivr.net/npm/vanta@latest/dist/vanta.net.min.js"></script>
         <script src="js/vanta.js"></script>     
         <script src="js/index.js"></script>
+        <script>
+            document.addEventListener("DOMContentLoaded", function () {
+              const contactForm = document.querySelector(".contact-form");
+              contactForm.addEventListener("submit", function (event) {
+                event.preventDefault();
+          
+                const name = document.querySelector(".name");
+                const email = document.querySelector(".email");
+                const subject = document.querySelector(".subject");
+                const message = document.querySelector(".message");
+          
+                let formIsValid = true;
+          
+                if (name.value.trim() === "") {
+                  formIsValid = false;
+                  name.style.border = "2px solid red";
+                } else {
+                  name.style.border = "none";
+                }
+          
+                if (email.value.trim() === "") {
+                  formIsValid = false;
+                  email.style.border = "2px solid red";
+                } else {
+                  email.style.border = "none";
+                }
+          
+                if (subject.value.trim() === "") {
+                  formIsValid = false;
+                  subject.style.border = "2px solid red";
+                } else {
+                  subject.style.border = "none";
+                }
+          
+                if (message.value.trim() === "") {
+                  formIsValid = false;
+                  message.style.border = "2px solid red";
+                } else {
+                  message.style.border = "none";
+                }
+          
+                if (formIsValid) {
+                  // Submit the form or send the data via AJAX
+                  console.log("Form is valid");
+                } else {
+                  console.log("Form is not valid");
+                }
+              });
+            });
+          </script>
+          
     </body>
 </html>
