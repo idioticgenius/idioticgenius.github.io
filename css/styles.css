@@ -387,128 +387,137 @@ footer {
     left: 0;
 }
 
-    .contact-button:hover span.text{
-        color: #1d1d1d;
-    }
-    #header{
-        font-size: 3rem;
-        margin-bottom:30px;
-    }
-    #header h2{
-        background: linear-gradient(to right, #FD1056 20%, #0A7AFF 80%);
-        -webkit-background-clip: text;
-        -webkit-text-fill-color: transparent;
-    }
-    
-    /* My Skills Page  */
-    .myskills {
-        display: flex;
-        flex-direction: column;
-        justify-content: space-between;
-        margin-top: 15%;
-        margin-left: 1.5rem;
-        margin-right: 1rem;
-        width: fit-content;
-    
-    }
-    .left-section {
-        display: flex;
-        float: left;
-        margin-right: 5%;
-        margin-bottom: 2rem;
-    }
-    .left-section .text-zone h2{
-        width:80%;
-        font-family: 'Archivo', sans-serif;
-        font-weight: 500;
-    }
-    .left-section .text-zone p{
-        text-align: justify;
-    }
-    .left-section .text-zone a{
-        color: #FD1056;
-        text-decoration: none;
-    }
-    .right-section {
-        display: flex;
-        flex-direction: column;
-        margin-right: 5%;
-    }
-    
-    .chart {
-        margin-bottom: 2rem;
-    }
-    
-    .chart span {
-        font-size: 18px;
-        font-family: 'Archivo', sans-serif;
-        margin-bottom: 7px;
-        display: block;
-    }
-    
-    .chart .line {
-        background-color: #373737;
-        height: 2px;
-    }
-    
-    .chart .line div {
-        width: 0;
-        height: 100%;
-        background-color: #fd1056;
-        transition: width 1.3s ease-out;
-    }
-    .work-row {
-        display: flex;
-        flex-direction: column;
-        justify-content: space-between;
-        margin-bottom: 1rem;
-    }
-    
-    .work-box {
-        width: 400px;
-        height: 250px;
-        background: #2a2a2a;
-        padding: 1.5rem;
-        margin-bottom: 1rem;
-        align-items: center;
-    }
-    .work-box:nth-child(odd) {
-        margin-right: 4%;
-    }
-    
-    .work-box:hover {
-        transform: translateY(-5px);
-        box-shadow: 0 10px 20px rgba(0,0,0,0.3);
-    }
-    .work-box .header {
-        font-family: 'Archivo', sans-serif;
-        font-weight: 500;
-        font-size: 26px;
-        line-height: 2rem;
-        margin-bottom: 1rem;
-    }
-    
-    .work-box .section {
-        font-family: 'Open Sans', sans-serif;
-        font-size: 16px;
-        color: #ababab;
-        margin-bottom: 1rem;
-    }
-    
-    .work-box .section time {
-        display: block;
-        font-size: 12px;
-    }
-    
-    .work-box .footer {
-        font-family: 'Open Sans', sans-serif;
-        font-size: 16px;
-        color: #ababab;
-        line-height: 1.5rem;
-        text-align: justify;
-    }
-    
-      /* Skills section ends  */
+.contact-button:hover span.text {
+    color: #1d1d1d;
+}
+
+#header {
+    font-size: 3rem;
+    margin-bottom: 30px;
+}
+
+#header h2 {
+    background: linear-gradient(to right, #FD1056 20%, #0A7AFF 80%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+/* My Skills Page  */
+.myskills {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    margin-top: 15%;
+    margin-left: 1.5rem;
+    margin-right: 1rem;
+    width: fit-content;
+
+}
+
+.left-section {
+    display: flex;
+    float: left;
+    margin-right: 5%;
+    margin-bottom: 2rem;
+}
+
+.left-section .text-zone h2 {
+    width: 80%;
+    font-family: 'Archivo', sans-serif;
+    font-weight: 500;
+}
+
+.left-section .text-zone p {
+    text-align: justify;
+}
+
+.left-section .text-zone a {
+    color: #FD1056;
+    text-decoration: none;
+}
+
+.right-section {
+    display: flex;
+    flex-direction: column;
+    margin-right: 5%;
+}
+
+.chart {
+    margin-bottom: 2rem;
+}
+
+.chart span {
+    font-size: 18px;
+    font-family: 'Archivo', sans-serif;
+    margin-bottom: 7px;
+    display: block;
+}
+
+.chart .line {
+    background-color: #373737;
+    height: 2px;
+}
+
+.chart .line div {
+    width: 0;
+    height: 100%;
+    background-color: #fd1056;
+    transition: width 1.3s ease-out;
+}
+
+.work-row {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    margin-bottom: 1rem;
+}
+
+.work-box {
+    width: 400px;
+    height: 250px;
+    background: #2a2a2a;
+    padding: 1.5rem;
+    margin-bottom: 1rem;
+    align-items: center;
+}
+
+.work-box:nth-child(odd) {
+    margin-right: 4%;
+}
+
+.work-box:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3);
+}
+
+.work-box .header {
+    font-family: 'Archivo', sans-serif;
+    font-weight: 500;
+    font-size: 26px;
+    line-height: 2rem;
+    margin-bottom: 1rem;
+}
+
+.work-box .section {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 16px;
+    color: #ababab;
+    margin-bottom: 1rem;
+}
+
+.work-box .section time {
+    display: block;
+    font-size: 12px;
+}
+
+.work-box .footer {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 16px;
+    color: #ababab;
+    line-height: 1.5rem;
+    text-align: justify;
+}
+/* Skills section ends  */
     
 /* Media Section for Bigger Screens */
 
