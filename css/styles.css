@@ -307,7 +307,9 @@ footer {
     padding-left: 1.5rem;
     z-index: 5;
 }
-
+.text-zone ul{
+    text-align: justify;
+}
 .text-zone h1{
     font-family: 'Archivo', sans-serif;
     font-size: 4rem;
