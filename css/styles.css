@@ -575,6 +575,95 @@ footer {
     resize: none;
   }
 
+/* blog section starts here */ 
+.section-blog {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    margin: 100px 0;
+    position: relative;
+}
+.section-blog .right-section{
+    display: none;
+    flex-direction: column;
+    margin: 0 100px;
+}
+.section-blog .right-section .categories{
+    margin-bottom: 10px;
+    width: 100%;
+}
+.categories title{
+    margin-bottom: 20px;
+}
+.categories .title-links ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+.categories .title-links li {
+    margin-bottom: 10px;
+}
+
+.categories .title-links li a {
+    color: #fd1056;
+    text-decoration: none;
+    font-size: 1rem;
+}
+.contact-me {
+    margin-bottom: 20px;
+}
+
+.blog-articles {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: column;
+    width: 100%;
+}
+.post-articles {
+    width: 100%;
+    height: auto;
+    background-color: #1d1d1d;
+    padding: 25px;
+    color: #909096;
+    box-shadow: 0 0 5px 5px #191919;
+    margin-bottom: 30px;
+    transition: background-color 0.3s;
+}
+.post-articles:hover {
+    background-color: #282828;
+}
+.post-content .picture {
+    width: 100%;
+    max-height: 250px; 
+    overflow: hidden;
+}
+
+.post-content .picture img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+}
+.post-date {
+    font-size: 14px;
+    letter-spacing: 3px;
+    text-transform: uppercase;
+}
+.blog-post-title h5 a {
+    font-size: 1.5rem;
+    text-decoration: none;
+    color: #fff;
+    display: block;
+    margin: 15px 0;
+}
+.blog-post-title h5 a:hover {
+    color: #fd1056;
+}
+.blog-post-content {
+    font-size: 1rem;
+    line-height: 1.5;
+}
 
 @keyframes expand {
   0% {
@@ -725,5 +814,28 @@ footer {
         flex-basis: 50%;
         order: 1;
       } 
+      /* media query for blog section */
+    .section-blog {
+        width: 90%;
+        margin: 100px auto 0;
+    }
+    .section-blog .right-section{
+        display: flex;
+      }
+    .blog-articles {
+        width: 90%;
+        margin: 0 0 0 auto;
+        flex-flow: row wrap;
+    }
+    .post-articles {
+        width: 350px;
+        height: 415px;
+        /* margin-right: 10px; */
+    }
+    .blog-post-title h5 a {
+        font-size: 1.7rem;
+        line-height: 2rem;
+    }
+
 
 }
